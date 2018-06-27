@@ -1,0 +1,187 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e62f43ff-3f12-4d4d-9c86-566b0c123886" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kanał</ID>
+  <Name>Kanał</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="081bc3e2-8c8a-4d89-b35e-037516058fca">
+    <DataSourceViewID>BD</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="19ce8645-04b2-4526-8459-7761bc89cd6d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="69ee820d-f249-4df2-805f-6bf311f9fc7e">
+      <ID>ID Kanał</ID>
+      <Name>ID Kanał</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7374bfe5-000e-40fd-8323-f9a285da6be8">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a51819d-573d-4ef4-91c7-f0219e4fe45f">
+            <TableID>dbo_Kanał</TableID>
+            <ColumnID>ID_Kanał</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f1127a46-1f82-4297-a07f-bd764948fb84">
+          <AttributeID>Nazwa Kanał</AttributeID>
+          <Name>Nazwa Kanał</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="86034d46-582e-4140-be27-b0372f2ab4c4">
+          <AttributeID>ID Kategoria</AttributeID>
+          <Name>ID Kategoria</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="37a3052b-a14a-435a-a78f-cc5ad657c27b">
+          <AttributeID>ID Grupa</AttributeID>
+          <Name>ID Grupa</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e35f6666-8502-467a-a025-ca88bc025583">
+      <ID>Nazwa Kanał</ID>
+      <Name>Nazwa Kanał</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9ca49dbc-5975-4561-b85a-2505c311c1b2">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b865b32-e55f-4b29-a5c9-64e660784dd1">
+            <TableID>dbo_Kanał</TableID>
+            <ColumnID>Nazwa_Kanał</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9eb5a71c-4bdf-4184-9191-3209b4dc0530">
+      <ID>ID Kategoria</ID>
+      <Name>ID Kategoria</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5318e373-9fec-4205-b68d-d35bb08d143b">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="91ae8f9a-c451-4274-a6dc-1471680d6291">
+            <TableID>dbo_Kategoria</TableID>
+            <ColumnID>ID_Kategoria</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6a581fe7-28b7-4b5e-b9bd-2213e4886d88">
+          <AttributeID>Nazwa Kategoria</AttributeID>
+          <Name>Nazwa Kategoria</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fbfbfbd2-0fd4-4f39-9484-dede73e79fa5">
+      <ID>Nazwa Kategoria</ID>
+      <Name>Nazwa Kategoria</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="81f05761-c1f2-4a68-8f8c-c56ad3291db6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d15d3224-03d3-4d5b-8ff4-0cce85e6f866">
+            <TableID>dbo_Kategoria</TableID>
+            <ColumnID>Nazwa_Kategoria</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7da4d482-614d-48d8-ab9c-521495e546f5">
+      <ID>ID Grupa</ID>
+      <Name>ID Grupa</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="19576dcf-569f-42ae-8349-581fe585483a">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="28292a4f-3eea-4619-b88d-bedf48b38818">
+            <TableID>dbo_Grupa</TableID>
+            <ColumnID>ID_Grupa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6778785d-0a8b-40c2-a4b0-55971650340c">
+          <AttributeID>Nazwa Grupa</AttributeID>
+          <Name>Nazwa Grupa</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2d610e28-9931-4ead-9ae0-23e00c058605">
+      <ID>Nazwa Grupa</ID>
+      <Name>Nazwa Grupa</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fcef347a-56a9-4955-9d91-0dda0634b96a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="407b15af-294b-43c3-b095-67eb62210cfa">
+            <TableID>dbo_Grupa</TableID>
+            <ColumnID>Nazwa_Grupa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

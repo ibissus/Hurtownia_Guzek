@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ISP", "ISP\ISP.dtproj", "{AC444C1C-F1C7-4A48-A606-E41ABFD0DE8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC444C1C-F1C7-4A48-A606-E41ABFD0DE8C}.Development|Default.ActiveCfg = Development
+		{AC444C1C-F1C7-4A48-A606-E41ABFD0DE8C}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58986258-DB55-43AE-B66E-CFEA447BC503}
+	EndGlobalSection
+EndGlobal
